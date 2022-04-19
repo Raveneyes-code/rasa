@@ -1,0 +1,479 @@
+version: "3.1" 
+
+intents:
+ - intent_oui
+ - intent_non
+ - nlu_fallback
+ - intent_greet
+ - intent_0
+ - intent_1
+ - intent_2
+ - intent_3
+ - intent_4
+ - intent_5
+ - intent_6
+ - intent_7
+ - intent_8
+ - intent_9
+ - intent_10
+ - intent_11
+ - intent_12
+ - intent_13
+ - intent_14
+ - intent_15
+ - intent_16
+ - intent_17
+ - intent_18
+ - intent_19
+ - intent_20
+ - intent_21
+ - intent_22
+ - intent_23
+ - intent_24
+ - intent_25
+ - intent_26
+ - intent_27
+ - intent_28
+ - intent_29
+ - intent_30
+ - intent_31
+ - intent_32
+ - intent_33
+ - intent_34
+ - intent_35
+ - intent_36
+ - intent_37
+ - intent_38
+ - intent_39
+ - intent_40
+ - intent_41
+ - intent_42
+ - intent_43
+ - intent_44
+ - intent_45
+ - intent_46
+ - intent_47
+ - intent_48
+ - intent_49
+ - intent_50
+ - intent_51
+ - intent_52
+ - intent_53
+ - intent_54
+ - intent_55
+ - intent_56
+ - intent_57
+ - intent_58
+ - intent_59
+ - intent_60
+ - intent_61
+ - intent_62
+ - intent_63
+ - intent_64
+ - intent_65
+ - intent_66
+ - intent_67
+ - intent_68
+ - intent_69
+ - intent_70
+ - intent_71
+ - intent_72
+ - intent_73
+ - intent_74
+ - intent_75
+ - intent_76
+ - intent_77
+ - intent_78
+ - intent_79
+ - intent_80
+ - intent_81
+ - intent_82
+ - intent_83
+ - intent_84
+ - intent_85
+ - intent_86
+ - intent_87
+ - intent_88
+ - intent_89
+ - intent_90
+ - intent_91
+ - intent_92
+ - request_names
+
+forms:
+  name_form:
+    required_slots:
+      - first_name
+      - last_name
+slots:
+  first_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+         - active_loop: name_form
+           requested_slot: first_name
+  last_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+         - active_loop: name_form
+           requested_slot: last_name
+
+responses:
+  utter_choicenon:
+  - text: "Happy to help!"
+
+  utter_greet:
+  - text: "Bonjour, comment puis-je vous aider ?"
+
+  utter_please_rephrase:
+  - text: "Je suis désolé, je n'ai pas bien compris. Pourriez-vous reformuler ?"
+
+  utter_0:
+  - text: "hello"
+
+  utter_link0:
+  - text: "https://media.istockphoto.com/photos/eyes-of-the-tiger-picture-id490989354?k=20&m=490989354&s=612x612&w=0&h=KhErA93o29Ovl4T2-C0-RetGGEVgeSuGv8FryDBNzyw="
+
+  utter_1:
+  - text: "Atos est un leader international de la transformation digitale avec environ 100 000 collaborateurs dans 73 pays et un chiffre d'affaires annuel de l’ordre de 13 milliards d'euros. Numéro un européen du Big Data, de la Cybersécurité, des supercalculateurs et de l’environnement de travail connecté, le Groupe fournit des services Cloud, solutions d’infrastructure et gestion de données, applications et plateformes métiers, ainsi que des services transactionnels par l’intermédiaire de Worldline, le leader européen des services de paiement. Grâce à ses technologies de pointe et son expertise digitale & sectorielle, Atos accompagne la transformation digitale de ses clients dans les secteurs Défense, Finance, Santé, Industrie, Médias, Énergie & Utilities, Secteur Public, Distribution, Télécoms, et Transports. Partenaire informatique mondial des Jeux Olympiques et Paralympiques, le Groupe exerce ses activités sous les marques Atos, Atos Consulting, Atos Worldgrid, Bull, Canopy, Unify et Worldline. Atos SE (Societas Europea) est une entreprise cotée sur Euronext Paris et fait partie de l’indice CAC 40.."
+
+  utter_2:
+  - text: "Veuillez adresser votre réclamation à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_3:
+  - text: "Veuillez adresser votre demande à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net avec justificative de votre nouveau statut"
+
+  utter_4:
+  - text: "Les bulletins de paie sont ennoyés à votre adresse mail entre le 5 et le 10 de chaque mois. En cas de problème veuillez adresser votre réclamation à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_5:
+  - text: "Dans un premier temps, il faut vérifier avec votre N+1 s'il a déclaré vos variables. si oui, Veuillez adresser votre réclamation à l'adresse mail suivante:  CSPRH-Atos-Maroc@atos.net"
+
+  utter_6:
+  - text: "Veuillez consulter sur votre Bulletin de paie  le champ 'N° de Retraite' qui représente votre Numéro de CIMR ,en cas d'anomalie Veuillez adresser votre réclamation à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_7:
+  - text: "La demande doit être faite par votre supérieur Hiérarchique sur l'outil ticketing  via le lien suivant: https://www.engie-direct.com/AT/Pages/default.aspx  pour plus de détails veuillez consulter la procédure sur le lien:  https://sp2013.myatos.net/organization/gbu/imea/ma/Morocco%20facilities/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgbu%2Fimea%2Fma%2FMorocco%20facilities%2FRAPPORTS%2FLISTE%2FPROCEDURE%20DE%20LA%20GESTION%20DES%20BADGES%20PARKING&FolderCTID=0x01200071BC1D8856197743A608C97763C6DC8D&View=%7B7B50EADA-579F-468E-B06C-69EB5912041C%7D "
+
+  utter_link7:
+  - text: "https://sp2013.myatos.net/organization/gbu/imea/ma/Morocco%20facilities/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgbu%2Fimea%2Fma%2FMorocco%20facilities%2FRAPPORTS%2FLISTE%2FPROCEDURE%20DE%20LA%20GESTION%20DES%20BADGES%20PARKING&FolderCTID=0x01200071BC1D8856197743A608C97763C6DC8D&View=%7B7B50EADA-579F-468E-B06C-69EB5912041C%7D  https://www.engie-direct.com/AT/Pages/default.aspx  "
+
+  utter_8:
+  - text: "La demande doit être faite par votre supérieur Hiérarchique sur l'outil ticketing  via le lien suivant: https://www.engie-direct.com/AT/Pages/default.aspx "
+
+  utter_link8:
+  - text: "https://www.engie-direct.com/AT/Pages/default.aspx "
+
+  utter_9:
+  - text: "Veuillez noter que la paie est clôturée le 14 de chaque mois.  - Si vous avez intégré avant le 14, votre salaire sera versé, à la fin du même mois.  - Si vous avez intégré après le 14, votre salaire sera cumulé avec celui du mois suivant.   Pour Plus d'informations, Veuillez adresser votre réclamation à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_10:
+  - text: "Veuillez adresser votre réclamation à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_11:
+  - text: "Veuillez consulter sur votre Bulletin de paie  le champ 'CNSS' qui représente votre Numéro de CNSS ,en cas d'anomalie Veuillez adresser votre réclamation à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_12:
+  - text: "Si votre  première immatriculation à la CNSS est faite par Atos, vous pouvez récupérer votre carte au niveau de l'admin RH. Dans le cas échéant vous devez  effectuer une demande auprès de l'agence CNSS la plus proche de votre domicile."
+
+  utter_13:
+  - text: "Les salariés sous contrat à durée indéterminée, ont le droit à l'assurance maladie privée dés le premier jour d'intégration.  Dans le cas d'un contrat Anapec, vous bénéficier de l'AMO.  Pour plus de détails veuillez consulter le guide maladie sur le lien suivant: Lien Guide maladie"
+
+  utter_14:
+  - text: "Vous pouvez déposer votre dossier médical au:  -  Shore 7 ( Bureau de l'infirmière) tous les lundis de 14H à 18H;  -  Shore 19: Tous les Mercredis de 09H à 12H. "
+
+  utter_15:
+  - text: "La saisie des demandes de congé doit être effectuée sur Myatos/ESS Leave.                                                                                                        une fois saisie celle-ci est envoyée automatiquement à votre manager pour validation. Vous recevrez une notification dans ce sens.                                                                                                                    Une fois la demande validée, vous recevrez un autre mail de notification. Lien ESS"
+
+  utter_link15:
+  - text: "https://www.engie-direct.com/AT/Pages/default.aspx "
+
+  utter_16:
+  - text: "A l'occasion de chaque naissance, tout salarié a droit à un congé parental de 3 jours, après présentation de l'acte de naissance courant le premier mois suivant la naissance. Pour plus de détail, veuillez consulter la procédure de 'gestion des congés et absences':https://sp2013.myatos.net/organization/gf/hr/IMEA/Morocco/Library1/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgf%2Fhr%2FIMEA%2FMorocco%2FLibrary1%2FProc%C3%A9dures%20RH%2FGestion%20des%20cong%C3%A9s%20et%20absences&FolderCTID=0x0120009F5F4A704C85B64CB354ED3754E18955&View=%7B8C3F3B62%2DC3BB%2D4F67%2DB314%2DA4F531F7F72D%7D"
+
+  utter_link16:
+  - text: "https://sp2013.myatos.net/organization/gf/hr/IMEA/Morocco/Library1/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgf%2Fhr%2FIMEA%2FMorocco%2FLibrary1%2FProc%C3%A9dures%20RH%2FGestion%20des%20cong%C3%A9s%20et%20absences&FolderCTID=0x0120009F5F4A704C85B64CB354ED3754E18955&View=%7B8C3F3B62%2DC3BB%2D4F67%2DB314%2DA4F531F7F72D%7D"
+
+  utter_17:
+  - text: "* A l'occasion du mariage, chaque collaborateur a droit à une permission d'absence de 4 jours qui doit être demandée courant le mois de l'établissement de l'acte de mariage, ce dernier doit être présenté comme pièce justificative.                                                                                                                      * En cas de mariage d'un enfant du salarié(e),ce dernier a droit à un congé  de 2 jours. sous réserve de présentation de l'acte de mariage comme pièce justificative                                                                                                           "
+
+  utter_link17:
+  - text: "https://sp2013.myatos.net/organization/gf/hr/IMEA/Morocco/Library1/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgf%2Fhr%2FIMEA%2FMorocco%2FLibrary1%2FProc%C3%A9dures%20RH%2FGestion%20des%20cong%C3%A9s%20et%20absences&FolderCTID=0x0120009F5F4A704C85B64CB354ED3754E18955&View=%7B8C3F3B62%2DC3BB%2D4F67%2DB314%2DA4F531F7F72D%7D"
+
+  utter_18:
+  - text: "En cas de décès, le salarié(e) a droit a des congés payés pour la perte des personnes suivantes:  * Conjoint: 3 jours                                                                                                         * Descendant: 3 jours                                                                                                  * Ascendant: 3 jours                                                                                                * Frère ou sœur du salarié: 2 jours                                                                                        * Frère ou sœur du conjoint: 2 jours                                                                       * Ascendant du conjoint: 2 jours                                                                                     Pour se faire, le salarié(e) concerné(e) doit déposer au service Admin RH un certificat de décès dans la semaine qui suit le décès."
+
+  utter_link18:
+  - text: "https://sp2013.myatos.net/organization/gf/hr/IMEA/Morocco/Library1/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgf%2Fhr%2FIMEA%2FMorocco%2FLibrary1%2FProc%C3%A9dures%20RH%2FGestion%20des%20cong%C3%A9s%20et%20absences&FolderCTID=0x0120009F5F4A704C85B64CB354ED3754E18955&View=%7B8C3F3B62%2DC3BB%2D4F67%2DB314%2DA4F531F7F72D%7D"
+
+  utter_19:
+  - text: "En cas de circoncision, chaque collaborateur/collaboratrice a droit à 2 jours"
+
+  utter_link19:
+  - text: "https://sp2013.myatos.net/organization/gf/hr/IMEA/Morocco/Library1/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgf%2Fhr%2FIMEA%2FMorocco%2FLibrary1%2FProc%C3%A9dures%20RH%2FGestion%20des%20cong%C3%A9s%20et%20absences&FolderCTID=0x0120009F5F4A704C85B64CB354ED3754E18955&View=%7B8C3F3B62%2DC3BB%2D4F67%2DB314%2DA4F531F7F72D%7D"
+
+  utter_20:
+  - text: "En effet, en cas d'opération chirurgicale du conjoint ou d'un enfant à charge, le salarié a droit à un congé payé de 2 jours sous présentation de pièces justificatives. "
+
+  utter_link20:
+  - text: "https://sp2013.myatos.net/organization/gf/hr/IMEA/Morocco/Library1/Forms/AllItems.aspx?RootFolder=%2Forganization%2Fgf%2Fhr%2FIMEA%2FMorocco%2FLibrary1%2FProc%C3%A9dures%20RH%2FGestion%20des%20cong%C3%A9s%20et%20absences&FolderCTID=0x0120009F5F4A704C85B64CB354ED3754E18955&View=%7B8C3F3B62%2DC3BB%2D4F67%2DB314%2DA4F531F7F72D%7D"
+
+  utter_21:
+  - text: "Le jour de votre départ vous devez passer au bureau de l'admin RH (chez Mme. Soukaina EL BADR ou son back up en cas d'absence) afin de récupérer votre formulaire de départ et le faire signer par: le manager, les Facilities,  la finance, la sécurité, l'IT et en dernier lieu votre HRBP. "
+
+  utter_22:
+  - text: "Votre préavis commence à partir du lendemain du dépôt de la démission comme suit:  - Moins de 3 mois =>8 jours - Moins d'un an=> un mois  - Un an à 5 ans=> deux mois  - Plus de 5 ans => trois mois "
+
+  utter_23:
+  - text: "L'annulation de votre démission doit être validée par votre manager ainsi que votre HRBP.    Après cette validation, le collaborateur doit déposer au niveau de l'admin RH une annulation de démission signée et légalisée et récupérer un accusé de réception. "
+
+  utter_24:
+  - text: "Après avoir effectuer les formalités de départ nécessaires et après clôture de la paie du mois de départ, le collaborateur peut récupérer son certificat de travail et son chèque de solde de tout compte (STC ).  Lieu de récupération: Shore 2 au 3ème étage.  Date récupération: à confirmer avec la HRS le jour du départ."
+
+  utter_25:
+  - text: "les documents à récupérer en cas de départ sont le reçu et le chèque de solde de tout compte ( STC) ainsi que le certificat de travail. "
+
+  utter_26:
+  - text: "En cas de rétention le collaborateur doit déposer son annulation de démission signée et légalisée de sa part contre accusé de réception ainsi qu'une copie de l'offre que le collaborateur a reçu. Ces documents doivent être déposés auprès de votre HRBP."
+
+  utter_27:
+  - text: "En effet, le collaborateur peut mandater, en cas de besoin, une autre personne pour récupérer ces documents à condition qu'elle soit munie d'une procuration légalisée de la part du démissionnaire ainsi que sa CIN. "
+
+  utter_28:
+  - text: "En règle générale, le préavis légale n'est pas assujetti aux négociations. En cas de force majeure, veuillez vous rapprocher de votre HRBP. "
+
+  utter_29:
+  - text: "La revue des codes GCM pour l'ensemble des collaborateurs se fait annuellement à l'occasion de la people review.  Pour les cas particuliers (promotions, rétentions, changement de postes, erreur...), le collaborateur s'adresse en premier à son manager qui coordonnera le sujet avec sa HRBP.   Une fois le changement acté, le collaborateur peut vérifier cela à travers l'une des options suivantes: - MyAtos==> personal information ==> GCM - MyAtos ==> Mycareer ==> fiche employé ==> GCM "
+
+  utter_30:
+  - text: "La revue des intitulés de fonctions pour l'ensemble des collaborateurs se fait annuellement dans les occasions de la people review ou durant la campagne des augmentations individuelles.  Pour les cas particuliers (promotions, rétentions, changement de postes, erreur...), le collaborateur s'adresse en premier à son manager qui coordonnera le sujet avec sa HRBP.   Une fois le changement acté, le collaborateur peut vérifier cela à travers l'une des options suivantes: - Bulletin de paie ==> rubrique emploi occupé.  - MyAtos==> personal information ==> Job Title - MyAtos ==> Mycareer ==> fiche employé ==> Job Title"
+
+  utter_31:
+  - text: "En cas de constatation d'une erreur au niveau de votre nom et/ou prénom, veuillez adresser votre demande à l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net "
+
+  utter_32:
+  - text: "Les demandes de pièces administratives doivent être adressées à l'adresse suivante :  rh-admin@atos.net   Les attestations sont distribuées deux fois par semaine, chaque  Mercredi après midi pour les demandes formulées les lundi et mardi et chaque vendredi après-midi pour les demandes formulées les jeudi et vendredi."
+
+  utter_33:
+  - text: "Chaque collaboratrice  a droit à 98 jours (14 semaines) de congé de maternité qui peut débuter sept semaines avant la date présumée de l'accouchement et qui peut se terminer sept semaines après la date de celui-ci.  Il est à noter qu'avant le départ de la collaboratrice en congé de maternité, celle ci doit s'adresser à l'admin RH pour récupérer la procédure à suivre pour la déclaration de son accouchement auprès de la société ainsi que de la CNSS. "
+
+  utter_34:
+  - text: "En vue d'élever son enfant, la mère salariée peut s'abstenir de reprendre son emploi à l'expiration du délai de 14 semaines suivants l'accouchement à condition d'en aviser la société ATOS 15 jours minimum avant la fin de son congé de maternité.  Dans ce cas, la durée de prolongation ne peut excéder 90 jours.  En cas de souhait de prolonger son congé de maternité au delà des 90 jours, une demande doit être formulée par la salariée à la société Atos 15 jours minimum avant la fin de son congé de maternité. Cette dernière nécessite une validation officielle de la part de l'employeur. "
+
+  utter_35:
+  - text: "Les documents nécessaires pour bénéficier de l'abattement IR en cas de prêt immobilier sont les suivants :  '-Tableau d’amortissement cachetée par la banque. - Copie du contrat de l'achat du bien.  - Déclaration sur l’honneur signée et légalisée. - Un certificat de résidence portant l'adresse du logement en question. - La copie de la CIN légalisée (copie conforme). "
+
+  utter_36:
+  - text: "Il existe 2 cas de figures pour le changement du RIB :   1- si le collaborateur a déjà demandé une domiciliation de salaire, il doit présenter la main levée de l’ancienne banque et le nouveau RIB à l'admin RH avant le 14 du mois pour prise en compte dans la paie du même mois.  2- Si le collaborateur n'a jamais demandé de domiciliation de salaire, il suffit de présenter le nouveau RIB à l'admin RH avant le 14 du mois pour prise en compte dans la paie du même mois. "
+
+  utter_37:
+  - text: "En effet , vous avez bien le droit  de demander une avance sur salaire qui sera étudiée et validée par votre HRPB ainsi que la direction générale conformément à la procédure en vigueur. Pour formuler la demande , il suffit de récupérer le formulaire d'avance sur salaire auprès de votre HRS. "
+
+  utter_38:
+  - text: "Pour avoir plus d'explications sur votre Bulletin de paie, nous vous invitons à vous rapprocher de votre HRS à travers  l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_39:
+  - text: "Pour avoir la simulation de votre salaire net ,nous vous invitons à vous rapprocher de votre HRS à travers  l'adresse mail suivante: CSPRH-Atos-Maroc@atos.net"
+
+  utter_40:
+  - text: "En plus de l'assurance maladie complémentaire, l'ensemble des collaborateurs d'Atos its nearshore ont le droit à la couverture assurance maladie obligatoire (AMO) après 6 mois de cotisations CNSS chez Atos."
+
+  utter_41:
+  - text: "En plus de l'assurance maladie obligatoire (AMO) dont vous bénéficiez après 6 mois de cotisations CNSS chez Atos,  l'ensemble des collaborateurs d'Atos its nearshore ont le droit à une assurance maladie complémentaire dès le premier jour d'intégration chez Atos."
+
+  utter_42:
+  - text: "Le taux de remboursement de l'assurance maladie complémentaire est de 90%. Pour plus de détails, veuillez consulter le guide maladie:lien"
+
+  utter_43:
+  - text: "Le taux global de cotisation CIMR est de 13,8% reparti comme suit: - La part salariale est de 6%. - Et la part patronale est de 7,8%."
+
+  utter_44:
+  - text: "En effet, l'ensemble des collaborateurs d'Atos ITS nearshore sous contrat CDI et ayant des enfants à charge peuvent bénéficier de bons achoura d'une valeur de 300 dirhams par enfant."
+
+  utter_45:
+  - text: "En effet, l'ensemble des collaborateurs d'Atos ITS nearshore sous contrat CDI  peuvent bénéficier d'une prime de aid kbir d'une valeur de 2000 dirhams."
+
+  utter_46:
+  - text: "Votre démission signée et légalisée de votre part devra être déposée auprès des HRS contre accusé de réception"
+
+  utter_47:
+  - text: "Le code de travail marocain ne prévoit pas de congé spécial déménagement ."
+
+  utter_48:
+  - text: "En cas d'accident de travail ,le collaborateur concerné doit faire toutes les démarches administratives de la déclaration auprès de la HRS idéalement le premier jour de l'accident ou au plus tard dans un délai ne dépassant pas les 48 heures après le sinistre."
+
+  utter_49:
+  - text: "En cas d'absence justifiée dépassant 3 jours, le collaborateur doit se présenter auprès de la HRS afin de récupérer le formulaire CNSS.Veuillez noter que le formulaire est téléchargeable depuis le site de la CNSS (Formulaire d'indemnité journalière)"
+
+  utter_50:
+  - text: "Pour mettre à jour votre situation familiale sur votre bulletin de paie, vous devez présenter un justificatif du changement de votre situation (exemple: extrait d'acte de naissance, acte de mariage ,document de divorce....) "
+
+  utter_51:
+  - text: "En général, des cérémonie de remise des certificats sont organisées une fois par mois par le service formation.   Par contre, en cas de besoin spécifique, le collaborateur concerné peut contacter directement le service formation pour demander son certificat via l'adresse mail suivante :  Formation-Atos-Maroc@atos.net "
+
+  utter_52:
+  - text: "Il est à noter qu'un plan de formations annuel consolidant l'ensemble des besoins du GDC est mis en place en début d'année en prenant en compte les besoins des collaborateurs et des managers.   Pour toute demande de formation non planifiée, il faut adresser celle ci à votre manager pour validation.  Une fois validée, celle-ci doit être envoyer au service formation pour traitement via l'adresse mail suivante :  Formation-Atos-Maroc@atos.net "
+
+  utter_53:
+  - text: "Une invitation est envoyée automatiquement par le service formation aux participants avec l'ensemble des détails relatifs à la date, le lieu et les horaires…"
+
+  utter_54:
+  - text: "Les prochaines sessions de formations sont fixées dans un planning mensuel qui est partagé avec votre manager à la fin de chaque mois regroupant l'ensemble des formations à venir. "
+
+  utter_55:
+  - text: "Pour connaitre la date de votre examen de certification, veuillez vous adresser au service formation via l'adresse mail suivante:   Formation-Atos-Maroc@atos.net "
+
+  utter_56:
+  - text: "Pour bénéficier d'une formation en anglais, nous vous invitons à découvrir le portail English first accessible via le lien suivant :   http://corporate.ef.com/partner/Corp/default.aspx?p=Atos    Pour tout besoin spécifique en formation en anglais en présentiel, veuillez valider votre demande auprès de votre manager avant de l'adresser au service formation via l'adresse mail suivante:   Formation-Atos-Maroc@atos.net"
+
+  utter_57:
+  - text: "En règle générale, un groupe de formation est constitué de 12 à 15 personnes maximum.   Des exceptions peuvent avoir lieu au cas par cas et en fonction du prestataire sélectionné.  "
+
+  utter_58:
+  - text: "Veuillez adresser votre demande à l'adresse mail suivante tout en précisant la date de certification, le thème et le prestataire  :  Formation-Atos-Maroc@atos.net "
+
+  utter_59:
+  - text: "Veuillez adresser votre demande à l'adresse mail suivante tout en précisant la date de certification, le thème et le prestataire  : Formation-Atos-Maroc@atos.net "
+
+  utter_60:
+  - text: "Tous les collaborateurs d'Atos doivent obligatoirement passer les formations   obligatoires ci-dessous :  L'accès à ces formations se fait via la plateforme Succesfactor disponible sur MyAtos.  • ATOS Data Protection 2018: code UNSCHE 9141_FR . •  Security & Safety Awareness: code 00028023. • Code of Ethics : code 00065818 . • ATOS Customer Experience : code 00029495. • Creating Value for Our Clients : code 00058634. "
+
+  utter_61:
+  - text: "Les guides utilisateurs de la plateforme Succesfactor sont disponibles sur le lien SharePoint suivant:"
+
+  utter_62:
+  - text: " Veuillez noter que la liste des documents selon le type de visa est disponible sur le lien SP ci-aprés , A noter que chaque demande VISA  doit être formalisée  dans un EDS disponible également sur le même lien.  "
+
+  utter_link62:
+  - text: "https://sp2013.myatos.net/organization/gbu/fr/gdcma/hr/PublicHR/Mobilit%20Internationale/Visa%20C%20Travail%20-%20Liste%20des%20documents.docx"
+
+  utter_63:
+  - text: " Veuillez noter que la liste des documents selon le type de visa est disponible sur le lien SP ci-aprés , A noter que chaque demande VISA  doit être formalisée  dans un EDS disponible également sur le même lien.  "
+
+  utter_link63:
+  - text: "https://sp2013.myatos.net/organization/gbu/fr/gdcma/hr/PublicHR/Mobilit%20Internationale/Visa%20D%20France%20-%20Liste%20des%20documents.docx"
+
+  utter_64:
+  - text: "Veuillez envoyer votre candidature a votre Ressource Manager en mettant votre manager en copie. Vous pouvez également chercher les opportunités de carrières disponibles au sein du groupe Atos sur my carrer "
+
+  utter_link64:
+  - text: "MyFuture@Atos"
+
+  utter_65:
+  - text: "Le délai de traitement dépend de la période. A titre indicatif une simulation de délai de traitement en fonction de type de visa est disponible sur le lien SP ci-aprés"
+
+  utter_link65:
+  - text: "https://sp2013.myatos.net/organization/gbu/fr/gdcma/hr/PublicHR/Mobilit%20Internationale/Visa%20timeline%20-%20Morocco%20to%20France.xlsx"
+
+  utter_66:
+  - text: "Veuillez noter que la familles d'un LR est prise en charge pour les missions de 13 mois et plus pour les éléments suivants uniquement: - La gestion du dossier et remboursement des frais de Visa D - Le remboursement des frais de timbre en France (cartes de séjour) - L'affiliation à une assurance maladie internationale - un aller simple pour le début et la fin de mission Pour les durées inférieures, aucune prise en charge n'ai assuré pour la famille. Pour plus d'information consulter la Policy Mobilité Morocco to France sur le lien suivant"
+
+  utter_67:
+  - text: "Veuillez noter que pour des cas  spécifiques une étude du centre de service mobilité est nécessaire. Après réception d'un EDS complet un retour sera fait par le service mobilité locale "
+
+  utter_link67:
+  - text: "Internationalmobility.conduent@hrs-it.com"
+
+  utter_68:
+  - text: "Je vous prie de noter le per diem autorisé en cas de mission : France à 40€ par jour, sauf pour Paris Bezons et Sophia Antipolis à 43€ par jour. Si vous partez travailler en Belgique vous avez droit à 50 € perdiem par jour, Si vous partez en voyage d'affaire en France ou en Belgique vous avez droit à 50 €. Pour toute autre destination, prière de demander à votre service mobilité internationale une confirmation du montant"
+
+  utter_69:
+  - text: "l'EDS ou Employée Data Sheet est une fiche de donnée employé comportant les données personnel requis pour traiter toute demande de déplacement d'un collaborateur du GDC à l'étranger. Ce fichier permet sauvegarder la mission sur l'outil mobilité Assignment Pro, d'activer un certain nombre de prestation externe, de traiter les procédures d'émigration et de maintenir un suivi des flux mobilité du GDC"
+
+  utter_70:
+  - text: "Veuillez noter que Atos prend en charger un aller simple en début de mission et en fin de mission pour le conjoint et 2 enfants pour les missions de 13 mois et plus. Pour les billets intermitant, le collaborateur autogère ses voyages avec un budget de 100 € par mois de mission à consommé à partir du 3ème mois de mission. "
+
+  utter_71:
+  - text: "Veuillez noter que le passeport talent n'est cependant pas une mobilité internationale mais plutôt un transfert à l'internationale. Vous pouvez consulter plus d'information à ce sujet sur le lien suivant"
+
+  utter_link71:
+  - text: "https://sp2013.myatos.net/organization/gbu/fr/gdcma/hr/PublicHR/Mobilit%20Internationale/Permanent%20Transfer%20-%20Local%20Plus.pptx"
+
+  utter_72:
+  - text: "Une nouvelle division nommée Business sourcing a été créée au sein du GDC pour répondre aux besoins des collaborateurs en terme de mobilité internationale. Pour postuler, il est indispensable que vous mettiez à jour votre Profile sur MyCV/MySkills, et envoyer votre  CV directement au head de la division en copiant votre manager ainsi que votre HRBP. "
+
+  utter_73:
+  - text: "En effet, tout type de missions à l'étranger seront gérées par la nouvelle division Business sourcing (BS)."
+
+  utter_link73:
+  - text: "https://sp2013.myatos.net/organization/gbu/fr/gdcma/hr/PublicHR/Mobilit%20Internationale/Permanent%20Transfer%20-%20Local%20Plus.pptx"
+
+  utter_74:
+  - text: "Le plan de carrière au sein d'ATOS doit être mis en place en concertation avec le manager direct.  Le groupe Atos met à la disposition de ses collaborateurs plusieurs outils de gestion de carrière dont le plus important est l'outil MyCareer accessible sur le portail MyAtos via le lien suivant:   https://performancemanager5.successfactors.eu/sf/home?bplte_company=Atos&_s.crb=pGaga6As4NYuqpih%252bCrExfLA9s4%253d#Shell-home  Cet outil vous permet de fixer et suivre l'évolution de vos objectifs semestriels ainsi que de construire votre plan de développement individuel. Pendant vos entretiens semestriel, vos besoins en terme de formations et mobilités peuvent être remontés à travers cet outil.   Veuillez trouver ci-après un lien SharePoint comprenant tous les guides et support nécessaires pour maitriser cet outil :  https://sp2013.myatos.net/organization/gf/hr/FR/GBUColl/Pages/DevCarrieres.aspx  Votre manager ainsi que votre HRBP demeurent à votre disposition pour vous guider dans votre projet de gestion de carrière au sein d'ATOS.  "
+
+  utter_75:
+  - text: "L'abréviation GCM signifie : GLOBAL CAPABILITY MODEL"
+
+  utter_76:
+  - text: "Le GCM est le référentiel des métiers du groupe Atos. Chaque collaborateur est positionné sur un code et un niveau GCM en fonction de son domaine d'activité, de son métier et de son niveau d'expérience. Ce code/niveau évolue au fur et à mesure de votre évolution professionnelle. "
+
+  utter_77:
+  - text: "Il existe deux options pour consulter votre GCM :   - Via le portail MyAtos => Personal Information => GCM - Via le portail MyAtos => MyCareer => Fiche employé => GCM  Pour plus d'informations, n'hésitez pas à consulter la matrice de compétences via le lien suivant :   "
+
+  utter_78:
+  - text: "Les collaborateurs peuvent postuler pour un poste en interne en utilisant l'outil MyAtos, allant sur « Careers » où ils peuvent accéder à 'SuccessFactors – Career Opportunities' et filtrer par département, type de poste"
+
+  utter_79:
+  - text: "Les collaborateurs peuvent aller Sur la page 'Careers' où il y a tous les éléments nécessaire pour faire un suivi (Job Application / Status), sinon les collaborateurs concernés peuvent aussi contacter directement WFM pour en savoir plus."
+
+  utter_80:
+  - text: "Il existe bien une grille salariale sur laquelle l'équipe RH et les Managers se basent pour étudier les propositions salariales dans le cadre de promotion interne, et recrutements... "
+
+  utter_81:
+  - text: "Un changement de GCM n'engendre pas automatiquement un changement de salaire et vice versa.  Pour plus de détails sur un cas précis, nous vous recommandons de vous rapprocher de votre manager ou de votre HRBP."
+
+  utter_82:
+  - text: "Un mouvement interne n'engendre pas forcément une revalorisation salariale.   Pour plus de détails sur un cas précis, nous vous recommandons de vous rapprocher de votre manager ou de votre HRBP."
+
+  utter_83:
+  - text: "Les demandes de réintegrations doivent être formulées à l'équipe recrutement. celles-ci sont etudiées par dossier au cas par cas . Il est à noter qu'en règle générale,les demandes de réintégrations ne sont pas accéptées sauf cas exceptionels.  "
+
+  utter_84:
+  - text: "Pour bénéficier de la prime de cooptation,vous devez d'abord envoyer le CV du candidat à coopter à l’adresse suivante: Cooptation-maroc@atos.net. une fois le candidat coopté validé et titularisé dans son poste, vous receverez automatiquement la prime correspondante."
+
+  utter_85:
+  - text: "nan"
+
+  utter_86:
+  - text: "Veuillez noter que la cooptation est réservée uniquement aux postes ouverts sous contrats CDI."
+
+  utter_87:
+  - text: "L’adresse mail de cooptation est la suivante :  cooptation-maroc@atos.net"
+
+  utter_88:
+  - text: "La liste des écoles partenaires d'ATOS est la suivante:  EMSI, ENSA, FST, AIAC, Faculté Ben M’sik "
+
+  utter_89:
+  - text: "Les montants des primes de cooptation varient selon le nombre d’années d’expérience du candidat retenu: '-[2 ans à 5 ans]: 4000 dhs brut '-[5 ans à 10 ans]: 5000 dhs brut '- Plus de 10 ans: 6000 dhs brut "
+
+  utter_90:
+  - text: "nan"
+
+  utter_91:
+  - text: "nan"
+
+  utter_92:
+  - text: "nan"
+  utter_ask_first_name:
+  - text: What is your first name?
+  utter_ask_last_name:
+  - text: So {first_name}, what is your last name?
+  utter_submit:
+  - text: Ok. Thanks!
+  utter_slots_values:
+  - text: I will remember that your name is {first_name} {last_name}!
+
+actions:
+  - fill_unanswered_sheet
+  - utter_slots_values
+  - utter_submit
+  - action_restart
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

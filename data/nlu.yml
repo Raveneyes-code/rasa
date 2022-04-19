@@ -1,0 +1,399 @@
+version: "3.1" 
+
+nlu:
+- intent: request_names
+  examples: |
+    - i want to give you my name
+    - i want an inscription form
+    - give name
+    - you need to know my name
+    - do you know my name?
+
+- intent: intent_oui
+  examples: |
+   - oui
+
+- intent: intent_non
+  examples: |
+   - non
+
+- intent: nlu_fallback
+  examples: |
+   - something
+
+- intent: intent_greet
+  examples: |
+   - bonjour
+
+- intent: intent_0
+  examples: |
+   - hello
+
+- intent: intent_1
+  examples: |
+   - Qu'est-ce que Atos ? 
+
+- intent: intent_2
+  examples: |
+   - En cas d'erreur sur mon solde de congé que dois-je faire ?
+
+- intent: intent_3
+  examples: |
+   - A qui dois-je m'adresser en cas de non mise à jour de mon nouveau statut sur le Bulletin de paie ?
+
+- intent: intent_4
+  examples: |
+   - Que dois-je faire en cas de non réception de Bulletin de Paie à la fin du mois
+
+- intent: intent_5
+  examples: |
+   - A qui m'adresser en cas de problème ou non réception de mes variables : Prime performance, Heure supplémentaire & Astreinte ?
+
+- intent: intent_6
+  examples: |
+   - Comment je peux connaitre mon matricule de la CIMR ?
+
+- intent: intent_7
+  examples: |
+   - Comment je peux demander une place Parking?
+
+- intent: intent_8
+  examples: |
+   - Comment je peux demander un Badge Casanearshore? 
+
+- intent: intent_9
+  examples: |
+   -  Je n'ai toujours pas reçu mon salaire, est ce que c'est normale?
+
+- intent: intent_10
+  examples: |
+   - J'ai un soucis concernant mes déclarations CNSS, à qui dois je m'adresser? 
+
+- intent: intent_11
+  examples: |
+   -  Comment je peux-avoir mon matricule CNSS? 
+
+- intent: intent_12
+  examples: |
+   -  Comment je peux récupérer ma carte CNSS? 
+
+- intent: intent_13
+  examples: |
+   -  Est-ce que j'ai le droit à l'assurance Maladie? Si Oui à partir de quelle date?
+
+- intent: intent_14
+  examples: |
+   - Comment je peux déposer mon dossier médical? 
+
+- intent: intent_15
+  examples: |
+   - Comment demander un congé payé ?
+
+- intent: intent_16
+  examples: |
+   - J'ai droit à combien de jours en cas de naissance ?
+
+- intent: intent_17
+  examples: |
+   - J'ai droit à combien de jours en cas de mariage ?
+
+- intent: intent_18
+  examples: |
+   - J'ai droit à combien de jours en cas de décès ?
+
+- intent: intent_19
+  examples: |
+   - J'ai droit à combien de jours en cas de circoncision ?
+
+- intent: intent_20
+  examples: |
+   - Est ce que j'ai droit à des jours de congés exceptionnels en cas d'opération chirurgicale ?
+
+- intent: intent_21
+  examples: |
+   - Qu'elle est la formalité à suivre en cas de départ ? 
+
+- intent: intent_22
+  examples: |
+   - Qu'elle est ma durée de préavis
+
+- intent: intent_23
+  examples: |
+   - Quelle sont les documents à déposer pour annuler la démission? 
+
+- intent: intent_24
+  examples: |
+   - Comment je peux récupérer mon STC?
+
+- intent: intent_25
+  examples: |
+   - Quels sont les documents que je récupère après mon départ ? 
+
+- intent: intent_26
+  examples: |
+   - Quels sont les documents à déposer en cas de rétention? 
+
+- intent: intent_27
+  examples: |
+   - Est-ce qu'une autre personne peut récupérer mon STC et mon certificat de travail à ma place,
+
+- intent: intent_28
+  examples: |
+   - Comment faire pour négocier mon préavis?
+
+- intent: intent_29
+  examples: |
+   - Comment sont gérés les changements du code GCM? 
+
+- intent: intent_30
+  examples: |
+   - Comment sont gérés les changements au niveau des intitulés de postes?
+
+- intent: intent_31
+  examples: |
+   - Que dois je faire en cas d'erreur constatée sur mon Nom (et/ou) Prénom sur bulletin de paie et/ou outils ATOS?
+
+- intent: intent_32
+  examples: |
+   - Comment faire pour demander une pièce administrative (attestation de travail, salaire, stage, congé et domiciliation…)? 
+
+- intent: intent_33
+  examples: |
+   - Quelle est la durée de mon congé Maternité?
+
+- intent: intent_34
+  examples: |
+   - Comment je peux prolonger mon congé de maternité?
+
+- intent: intent_35
+  examples: |
+   - Quels sont les documents nécessaires pour bénéficier de l'abattement IR dans le cadre d'un prêt immobilier? 
+
+- intent: intent_36
+  examples: |
+   - Comment je peux changer mon RIB?  
+
+- intent: intent_37
+  examples: |
+   - Ai-je le droit à une avance sur salaire ? et si oui, comment faire la demande ?
+
+- intent: intent_38
+  examples: |
+   - A qui dois-je m'adresser pour avoir plus d'explication sur mon Bulletin de paie ?
+
+- intent: intent_39
+  examples: |
+   - Comment faire pour avoir la simulation de mon salaire Net sans variables ?
+
+- intent: intent_40
+  examples: |
+   - Ai-je le droit à une couverture assurance maladie obligatoire (AMO)?
+
+- intent: intent_41
+  examples: |
+   - Quand est ce que je peux bénéficier du remboursement de l'assurance maladie complémentaire?
+
+- intent: intent_42
+  examples: |
+   - Quel est le taux de remboursement de l'assurance maladie complémentaire ?
+
+- intent: intent_43
+  examples: |
+   - Quel est le taux global de cotisation CIMR ?
+
+- intent: intent_44
+  examples: |
+   - Est-ce que je peux bénéficier de bons Achoura ?
+
+- intent: intent_45
+  examples: |
+   - Est-ce que je peux bénéficier de la prime de Aid Kbir ?
+
+- intent: intent_46
+  examples: |
+   - Comment accuser réception de ma démission ? 
+
+- intent: intent_47
+  examples: |
+   - Est-ce que je peux bénéficier d'un congé de déménagement ?
+
+- intent: intent_48
+  examples: |
+   - Comment je peux déclarer un Accident de Travail?
+
+- intent: intent_49
+  examples: |
+   - Au-delà d'absence justifiée de 3 jours , comment je peux demander le remboursement CNSS ?
+
+- intent: intent_50
+  examples: |
+   - Comment faire pour mettre à jour ma situation familiale  sur le bulletin de paie ?
+
+- intent: intent_51
+  examples: |
+   - Comment je peux récupérer ma certification ? 
+
+- intent: intent_52
+  examples: |
+   - Comment je peux demander des formations?
+
+- intent: intent_53
+  examples: |
+   - Comment je peux savoir le lieu de la formation à laquelle je vais participer? 
+
+- intent: intent_54
+  examples: |
+   - Quelles sont les prochaines sessions de formation?
+
+- intent: intent_55
+  examples: |
+   - Quelle est la date de l'examen de certification? 
+
+- intent: intent_56
+  examples: |
+   - Quelles sont les prochaines dates pour les tests d'anglais
+
+- intent: intent_57
+  examples: |
+   - De combien de participants avons-nous besoin pour constituer un groupe de formation?  
+
+- intent: intent_58
+  examples: |
+   - Je n'ai pas reçu le lien pour télécharger ma certification? 
+
+- intent: intent_59
+  examples: |
+   - Comment je peux réserver une salle de formation? 
+
+- intent: intent_60
+  examples: |
+   - Quelles sont les formations obligatoires à réaliser ? 
+
+- intent: intent_61
+  examples: |
+   - Comment utiliser la plateforme Successfactor ?
+
+- intent: intent_62
+  examples: |
+   - En cas d'une demande d'un Visa business pour une réunion en France , quel sont les documents à préparer  ?
+
+- intent: intent_63
+  examples: |
+   - En cas de Visa LR, quel sont les documents à préparer ?
+
+- intent: intent_64
+  examples: |
+   - En cas d'une ouverture pour mission LR, comment puis-je postuler ?
+
+- intent: intent_65
+  examples: |
+   - Quel est le délais de traitement d'une demande de Visa pour une mission en France ?
+
+- intent: intent_66
+  examples: |
+   - En cas d'une mission LR, est-ce que la famille du collaborateur est prise en charge par rapport  à l'assurance maladie internationale, frais de timbre… etc. ?
+
+- intent: intent_67
+  examples: |
+   - Est-il possible d'utiliser mon Visa touristique pour une mission business ?
+
+- intent: intent_68
+  examples: |
+   - A combien de per diem ai-je droit quand je part en mission ?
+
+- intent: intent_69
+  examples: |
+   - Qu'est ce qu'un EDS ?
+
+- intent: intent_70
+  examples: |
+   - En cas de mission business/LR, est-ce qu'Atos prend en charge les billets d'avions de ma famille ?
+
+- intent: intent_71
+  examples: |
+   - Est-t-il possible d'aller en mission en France utilisant le passeport talent ?
+
+- intent: intent_72
+  examples: |
+   - Que dois-je faire si je suis interessé par la mobilité internationale ?
+
+- intent: intent_73
+  examples: |
+   - Est-ce que les missions LR seront aussi gérés au sein de la nouvelle division BS ?
+
+- intent: intent_74
+  examples: |
+   - Comment je peux gérer ma carrière au sein d'ATOS?
+
+- intent: intent_75
+  examples: |
+   - Que signifie l'abréviation du code GCM ?
+
+- intent: intent_76
+  examples: |
+   - Que veut dire un code GCM? 
+
+- intent: intent_77
+  examples: |
+   - Comment je peux consulter mon GCM? 
+
+- intent: intent_78
+  examples: |
+   - Comment puis-je postuler pour un poste interne ?
+
+- intent: intent_79
+  examples: |
+   - Comment puis-je faire un suivi de ma candidature ?
+
+- intent: intent_80
+  examples: |
+   - Est-ce qu'il existe une grille salariale sur laquelle les RHs se basent pour étudier les promotions internes et recrutements? 
+
+- intent: intent_81
+  examples: |
+   - Est-ce qu'un changement de GCM engendre un changement de salaire et vice versa ?
+
+- intent: intent_82
+  examples: |
+   - Est-ce qu'un mouvement interne 'horizontal' peut engendrer une revalorisation de salariale ?
+
+- intent: intent_83
+  examples: |
+   - Est-ce qu'il y a la possibilité pour un collaborateur de ré-integrer après avoir quitté Atos ?
+
+- intent: intent_84
+  examples: |
+   - Comment puis-je faire pour bénéficier de la prime de Cooptation ?
+
+- intent: intent_85
+  examples: |
+   - nan
+
+- intent: intent_86
+  examples: |
+   - Est-ce que je peux coopter une personne pour un Stage ?
+
+- intent: intent_87
+  examples: |
+   - C’est quoi l’adresse mail de cooptation ?
+
+- intent: intent_88
+  examples: |
+   - Quellles sont les écoles partenaires d’AtoS ?
+
+- intent: intent_89
+  examples: |
+   - Quelle sont les montants des primes de cooptation ?
+
+- intent: intent_90
+  examples: |
+   - nan
+
+- intent: intent_91
+  examples: |
+   - nan
+
+- intent: intent_92
+  examples: |
+   - nan
+

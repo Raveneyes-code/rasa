@@ -1,0 +1,415 @@
+version: "3.1" 
+
+rules:
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: greeting
+  steps:
+  - intent: intent_greet
+  - action: utter_greet
+
+- rule: Say utter_1 anytime the user says intent_1
+  steps:
+  - intent: intent_1
+  - action: utter_1
+
+- rule: Say utter_2 anytime the user says intent_2
+  steps:
+  - intent: intent_2
+  - action: utter_2
+
+- rule: Say utter_3 anytime the user says intent_3
+  steps:
+  - intent: intent_3
+  - action: utter_3
+
+- rule: Say utter_4 anytime the user says intent_4
+  steps:
+  - intent: intent_4
+  - action: utter_4
+
+- rule: Say utter_5 anytime the user says intent_5
+  steps:
+  - intent: intent_5
+  - action: utter_5
+
+- rule: Say utter_6 anytime the user says intent_6
+  steps:
+  - intent: intent_6
+  - action: utter_6
+
+- rule: Say utter_9 anytime the user says intent_9
+  steps:
+  - intent: intent_9
+  - action: utter_9
+
+- rule: Say utter_10 anytime the user says intent_10
+  steps:
+  - intent: intent_10
+  - action: utter_10
+
+- rule: Say utter_11 anytime the user says intent_11
+  steps:
+  - intent: intent_11
+  - action: utter_11
+
+- rule: Say utter_12 anytime the user says intent_12
+  steps:
+  - intent: intent_12
+  - action: utter_12
+
+- rule: Say utter_13 anytime the user says intent_13
+  steps:
+  - intent: intent_13
+  - action: utter_13
+
+- rule: Say utter_14 anytime the user says intent_14
+  steps:
+  - intent: intent_14
+  - action: utter_14
+
+- rule: Say utter_21 anytime the user says intent_21
+  steps:
+  - intent: intent_21
+  - action: utter_21
+
+- rule: Say utter_22 anytime the user says intent_22
+  steps:
+  - intent: intent_22
+  - action: utter_22
+
+- rule: Say utter_23 anytime the user says intent_23
+  steps:
+  - intent: intent_23
+  - action: utter_23
+
+- rule: Say utter_24 anytime the user says intent_24
+  steps:
+  - intent: intent_24
+  - action: utter_24
+
+- rule: Say utter_25 anytime the user says intent_25
+  steps:
+  - intent: intent_25
+  - action: utter_25
+
+- rule: Say utter_26 anytime the user says intent_26
+  steps:
+  - intent: intent_26
+  - action: utter_26
+
+- rule: Say utter_27 anytime the user says intent_27
+  steps:
+  - intent: intent_27
+  - action: utter_27
+
+- rule: Say utter_28 anytime the user says intent_28
+  steps:
+  - intent: intent_28
+  - action: utter_28
+
+- rule: Say utter_29 anytime the user says intent_29
+  steps:
+  - intent: intent_29
+  - action: utter_29
+
+- rule: Say utter_30 anytime the user says intent_30
+  steps:
+  - intent: intent_30
+  - action: utter_30
+
+- rule: Say utter_31 anytime the user says intent_31
+  steps:
+  - intent: intent_31
+  - action: utter_31
+
+- rule: Say utter_32 anytime the user says intent_32
+  steps:
+  - intent: intent_32
+  - action: utter_32
+
+- rule: Say utter_33 anytime the user says intent_33
+  steps:
+  - intent: intent_33
+  - action: utter_33
+
+- rule: Say utter_34 anytime the user says intent_34
+  steps:
+  - intent: intent_34
+  - action: utter_34
+
+- rule: Say utter_35 anytime the user says intent_35
+  steps:
+  - intent: intent_35
+  - action: utter_35
+
+- rule: Say utter_36 anytime the user says intent_36
+  steps:
+  - intent: intent_36
+  - action: utter_36
+
+- rule: Say utter_37 anytime the user says intent_37
+  steps:
+  - intent: intent_37
+  - action: utter_37
+
+- rule: Say utter_38 anytime the user says intent_38
+  steps:
+  - intent: intent_38
+  - action: utter_38
+
+- rule: Say utter_39 anytime the user says intent_39
+  steps:
+  - intent: intent_39
+  - action: utter_39
+
+- rule: Say utter_40 anytime the user says intent_40
+  steps:
+  - intent: intent_40
+  - action: utter_40
+
+- rule: Say utter_41 anytime the user says intent_41
+  steps:
+  - intent: intent_41
+  - action: utter_41
+
+- rule: Say utter_42 anytime the user says intent_42
+  steps:
+  - intent: intent_42
+  - action: utter_42
+
+- rule: Say utter_43 anytime the user says intent_43
+  steps:
+  - intent: intent_43
+  - action: utter_43
+
+- rule: Say utter_44 anytime the user says intent_44
+  steps:
+  - intent: intent_44
+  - action: utter_44
+
+- rule: Say utter_45 anytime the user says intent_45
+  steps:
+  - intent: intent_45
+  - action: utter_45
+
+- rule: Say utter_46 anytime the user says intent_46
+  steps:
+  - intent: intent_46
+  - action: utter_46
+
+- rule: Say utter_47 anytime the user says intent_47
+  steps:
+  - intent: intent_47
+  - action: utter_47
+
+- rule: Say utter_48 anytime the user says intent_48
+  steps:
+  - intent: intent_48
+  - action: utter_48
+
+- rule: Say utter_49 anytime the user says intent_49
+  steps:
+  - intent: intent_49
+  - action: utter_49
+
+- rule: Say utter_50 anytime the user says intent_50
+  steps:
+  - intent: intent_50
+  - action: utter_50
+
+- rule: Say utter_51 anytime the user says intent_51
+  steps:
+  - intent: intent_51
+  - action: utter_51
+
+- rule: Say utter_52 anytime the user says intent_52
+  steps:
+  - intent: intent_52
+  - action: utter_52
+
+- rule: Say utter_53 anytime the user says intent_53
+  steps:
+  - intent: intent_53
+  - action: utter_53
+
+- rule: Say utter_54 anytime the user says intent_54
+  steps:
+  - intent: intent_54
+  - action: utter_54
+
+- rule: Say utter_55 anytime the user says intent_55
+  steps:
+  - intent: intent_55
+  - action: utter_55
+
+- rule: Say utter_56 anytime the user says intent_56
+  steps:
+  - intent: intent_56
+  - action: utter_56
+
+- rule: Say utter_57 anytime the user says intent_57
+  steps:
+  - intent: intent_57
+  - action: utter_57
+
+- rule: Say utter_58 anytime the user says intent_58
+  steps:
+  - intent: intent_58
+  - action: utter_58
+
+- rule: Say utter_59 anytime the user says intent_59
+  steps:
+  - intent: intent_59
+  - action: utter_59
+
+- rule: Say utter_60 anytime the user says intent_60
+  steps:
+  - intent: intent_60
+  - action: utter_60
+
+- rule: Say utter_61 anytime the user says intent_61
+  steps:
+  - intent: intent_61
+  - action: utter_61
+
+- rule: Say utter_66 anytime the user says intent_66
+  steps:
+  - intent: intent_66
+  - action: utter_66
+
+- rule: Say utter_68 anytime the user says intent_68
+  steps:
+  - intent: intent_68
+  - action: utter_68
+
+- rule: Say utter_69 anytime the user says intent_69
+  steps:
+  - intent: intent_69
+  - action: utter_69
+
+- rule: Say utter_70 anytime the user says intent_70
+  steps:
+  - intent: intent_70
+  - action: utter_70
+
+- rule: Say utter_72 anytime the user says intent_72
+  steps:
+  - intent: intent_72
+  - action: utter_72
+
+- rule: Say utter_74 anytime the user says intent_74
+  steps:
+  - intent: intent_74
+  - action: utter_74
+
+- rule: Say utter_75 anytime the user says intent_75
+  steps:
+  - intent: intent_75
+  - action: utter_75
+
+- rule: Say utter_76 anytime the user says intent_76
+  steps:
+  - intent: intent_76
+  - action: utter_76
+
+- rule: Say utter_77 anytime the user says intent_77
+  steps:
+  - intent: intent_77
+  - action: utter_77
+
+- rule: Say utter_78 anytime the user says intent_78
+  steps:
+  - intent: intent_78
+  - action: utter_78
+
+- rule: Say utter_79 anytime the user says intent_79
+  steps:
+  - intent: intent_79
+  - action: utter_79
+
+- rule: Say utter_80 anytime the user says intent_80
+  steps:
+  - intent: intent_80
+  - action: utter_80
+
+- rule: Say utter_81 anytime the user says intent_81
+  steps:
+  - intent: intent_81
+  - action: utter_81
+
+- rule: Say utter_82 anytime the user says intent_82
+  steps:
+  - intent: intent_82
+  - action: utter_82
+
+- rule: Say utter_83 anytime the user says intent_83
+  steps:
+  - intent: intent_83
+  - action: utter_83
+
+- rule: Say utter_84 anytime the user says intent_84
+  steps:
+  - intent: intent_84
+  - action: utter_84
+
+- rule: Say utter_85 anytime the user says intent_85
+  steps:
+  - intent: intent_85
+  - action: utter_85
+
+- rule: Say utter_86 anytime the user says intent_86
+  steps:
+  - intent: intent_86
+  - action: utter_86
+
+- rule: Say utter_87 anytime the user says intent_87
+  steps:
+  - intent: intent_87
+  - action: utter_87
+
+- rule: Say utter_88 anytime the user says intent_88
+  steps:
+  - intent: intent_88
+  - action: utter_88
+
+- rule: Say utter_89 anytime the user says intent_89
+  steps:
+  - intent: intent_89
+  - action: utter_89
+
+- rule: Say utter_90 anytime the user says intent_90
+  steps:
+  - intent: intent_90
+  - action: utter_90
+
+- rule: Say utter_91 anytime the user says intent_91
+  steps:
+  - intent: intent_91
+  - action: utter_91
+
+- rule: Say utter_92 anytime the user says intent_92
+  steps:
+  - intent: intent_92
+  - action: utter_92
+
+- rule: Activate form
+  steps:
+  - intent: request_names
+  - action: name_form
+  - active_loop: name_form
+
+- rule: Submit form
+  condition:
+  - active_loop: name_form
+  steps:
+  - action: name_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_submit
+  - action: utter_slots_values

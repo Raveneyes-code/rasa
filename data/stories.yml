@@ -1,0 +1,122 @@
+version: "3.1" 
+
+stories:
+
+- story: story_yes0
+  steps:
+  - intent: intent_0
+  - action: utter_0
+  - action: utter_link0
+
+- story: story_yes7
+  steps:
+  - intent: intent_7
+  - action: utter_7
+  - action: utter_link7
+
+- story: story_yes8
+  steps:
+  - intent: intent_8
+  - action: utter_8
+  - action: utter_link8
+
+- story: story_yes15
+  steps:
+  - intent: intent_15
+  - action: utter_15
+  - action: utter_link15
+
+- story: story_yes16
+  steps:
+  - intent: intent_16
+  - action: utter_16
+  - action: utter_link16
+
+- story: story_yes17
+  steps:
+  - intent: intent_17
+  - action: utter_17
+  - action: utter_link17
+
+- story: story_yes18
+  steps:
+  - intent: intent_18
+  - action: utter_18
+  - action: utter_link18
+
+- story: story_yes19
+  steps:
+  - intent: intent_19
+  - action: utter_19
+  - action: utter_link19
+
+- story: story_yes20
+  steps:
+  - intent: intent_20
+  - action: utter_20
+  - action: utter_link20
+
+- story: story_yes62
+  steps:
+  - intent: intent_62
+  - action: utter_62
+  - action: utter_link62
+
+- story: story_yes63
+  steps:
+  - intent: intent_63
+  - action: utter_63
+  - action: utter_link63
+
+- story: story_yes64
+  steps:
+  - intent: intent_64
+  - action: utter_64
+  - action: utter_link64
+
+- story: story_yes65
+  steps:
+  - intent: intent_65
+  - action: utter_65
+  - action: utter_link65
+
+- story: story_yes67
+  steps:
+  - intent: intent_67
+  - action: utter_67
+  - action: utter_link67
+
+- story: story_yes71
+  steps:
+  - intent: intent_71
+  - action: utter_71
+  - action: utter_link71
+
+- story: story_yes73
+  steps:
+  - intent: intent_73
+  - action: utter_73
+  - action: utter_link73
+
+
+- story: interactive story 1
+  steps:
+  - intent: intent_greet
+  - action: utter_greet
+  - intent: request_names
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: first_name
+  - slot_was_set:
+    - first_name: vincent
+  - slot_was_set:
+    - requested_slot: last_name
+  - slot_was_set:
+    - last_name: vincent-mcvincent
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: utter_slots_values
+

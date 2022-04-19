@@ -1,0 +1,229 @@
+version: "3.1" 
+
+stories:
+
+- story: story_yes6
+  steps:
+  - intent: intent_6
+  - action: utter_link6
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link6
+
+- story: story_no6
+  steps:
+  - intent: intent_6
+  - action: utter_link6
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes7
+  steps:
+  - intent: intent_7
+  - action: utter_link7
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link7
+
+- story: story_no7
+  steps:
+  - intent: intent_7
+  - action: utter_link7
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes14
+  steps:
+  - intent: intent_14
+  - action: utter_link14
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link14
+
+- story: story_no14
+  steps:
+  - intent: intent_14
+  - action: utter_link14
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes15
+  steps:
+  - intent: intent_15
+  - action: utter_link15
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link15
+
+- story: story_no15
+  steps:
+  - intent: intent_15
+  - action: utter_link15
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes16
+  steps:
+  - intent: intent_16
+  - action: utter_link16
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link16
+
+- story: story_no16
+  steps:
+  - intent: intent_16
+  - action: utter_link16
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes17
+  steps:
+  - intent: intent_17
+  - action: utter_link17
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link17
+
+- story: story_no17
+  steps:
+  - intent: intent_17
+  - action: utter_link17
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes18
+  steps:
+  - intent: intent_18
+  - action: utter_link18
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link18
+
+- story: story_no18
+  steps:
+  - intent: intent_18
+  - action: utter_link18
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes19
+  steps:
+  - intent: intent_19
+  - action: utter_link19
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link19
+
+- story: story_no19
+  steps:
+  - intent: intent_19
+  - action: utter_link19
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes61
+  steps:
+  - intent: intent_61
+  - action: utter_link61
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link61
+
+- story: story_no61
+  steps:
+  - intent: intent_61
+  - action: utter_link61
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes62
+  steps:
+  - intent: intent_62
+  - action: utter_link62
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link62
+
+- story: story_no62
+  steps:
+  - intent: intent_62
+  - action: utter_link62
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes63
+  steps:
+  - intent: intent_63
+  - action: utter_link63
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link63
+
+- story: story_no63
+  steps:
+  - intent: intent_63
+  - action: utter_link63
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes64
+  steps:
+  - intent: intent_64
+  - action: utter_link64
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link64
+
+- story: story_no64
+  steps:
+  - intent: intent_64
+  - action: utter_link64
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes66
+  steps:
+  - intent: intent_66
+  - action: utter_link66
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link66
+
+- story: story_no66
+  steps:
+  - intent: intent_66
+  - action: utter_link66
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes70
+  steps:
+  - intent: intent_70
+  - action: utter_link70
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link70
+
+- story: story_no70
+  steps:
+  - intent: intent_70
+  - action: utter_link70
+  - action: utter_choice
+  - intent: intent_no
+
+- story: story_yes72
+  steps:
+  - intent: intent_72
+  - action: utter_link72
+  - action: utter_choice
+  - intent: intent_yes
+  - action: utter_link72
+
+- story: story_no72
+  steps:
+  - intent: intent_72
+  - action: utter_link72
+  - action: utter_choice
+  - intent: intent_no
+

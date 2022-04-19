@@ -1,0 +1,24 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_2\"}}]": "utter_2",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_2\"}}, {\"prev_action\": {\"action_name\": \"utter_2\"}, \"user\": {\"intent\": \"intent_2\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_1\"}}]": "utter_1",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_1\"}}, {\"prev_action\": {\"action_name\": \"utter_1\"}, \"user\": {\"intent\": \"intent_1\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_0\"}}]": "utter_0",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_0\"}}, {\"prev_action\": {\"action_name\": \"utter_0\"}, \"user\": {\"intent\": \"intent_0\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_3\"}}]": "utter_3",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_3\"}}, {\"prev_action\": {\"action_name\": \"utter_3\"}, \"user\": {\"intent\": \"intent_3\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_3\"}}, {\"prev_action\": {\"action_name\": \"utter_3\"}, \"user\": {\"intent\": \"intent_3\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"intent_3\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent back",
+      "predicting default action with intent session_start"
+    ]
+  }
+}
